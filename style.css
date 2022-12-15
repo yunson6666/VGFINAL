@@ -1,0 +1,45 @@
+svg{
+    border:1px solid #ccc;
+}
+
+.axis .domain{
+    stroke:none;
+}
+
+.x line{
+    stroke:rgb(255, 255, 255);
+}
+
+body{
+    font-weight: bold;
+    margin:2rem;
+}
+h3{
+    font-weight:100;
+    color:#555;
+    margin:0.4rem0;
+}
+svg{
+    border:1px solid#ccc;
+}
+button{
+    outline:none;
+    color:#555;
+    border-color:#eee;
+    background:#fefefe;
+    padding:3px0px;
+    width:48px;
+    text-align:center;
+    transition:all200ms;
+}
+button:hover{
+    background:lightgoldenrodyellow;
+}
+button:focus{
+    background:lightpink;
+}
+.tooltip{
+    position:fixed;
+    opacity:0;
+    pointer-events:none;
+}
