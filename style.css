@@ -1,45 +1,32 @@
-svg{
-    border:1px solid #ccc;
-}
-
-.axis .domain{
-    stroke:none;
-}
-
-.x line{
-    stroke:rgb(255, 255, 255);
-}
-
-body{
-    font-weight: bold;
-    margin:2rem;
-}
-h3{
-    font-weight:100;
-    color:#555;
-    margin:0.4rem0;
-}
-svg{
-    border:1px solid#ccc;
-}
-button{
-    outline:none;
-    color:#555;
-    border-color:#eee;
-    background:#fefefe;
-    padding:3px0px;
-    width:48px;
-    text-align:center;
-    transition:all200ms;
-}
-button:hover{
-    background:lightgoldenrodyellow;
-}
-button:focus{
-    background:lightpink;
-}
 .tooltip{
     position:fixed;
     opacity:0;
-    pointer-events:none;
+    pointer-events:none;/*避免出現連結或其他預設行為*/
+    background:#eee;
+    max-width:200px;
+}
+
+.tip-header{
+    border-bottom:2px solid white;
+    padding:0.9rem 1rem;
+}
+.tip-body{
+    padding:0.2rem0;
+}
+h3,h4{
+    font-size:0.9rem;
+    color:#555;margin:0;
+}
+h4{
+    font-weight:normal;
+}
+
+.tip-info{
+    margin:0;
+    padding:0.3rem 1em;
+    font-size:0.8em;
+}
+
+.tip-info:nth-of-type(even){
+    background:#e0e0e0;
 }
